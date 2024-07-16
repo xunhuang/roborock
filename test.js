@@ -125,6 +125,16 @@ client.on('connect', function () {
       sendRequest(deviceId, command, [], true).then(result => {
         console.log("all done", result);
       });
+      setTimeout(() => {
+        console.log("Exiting after 3 seconds");
+        client.end(); // Terminate the client connection
+        process.exit(0); // Exit the process
+      }, 3000);
+
+    } else {
+      console.error("Error in subscription:", err);
+      client.end(); // Terminate the client connection
+      process.exit(1); // Exit the process with error code
     }
   })
 })
