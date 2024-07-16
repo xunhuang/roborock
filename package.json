@@ -1,0 +1,20 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A brief description of your project",
+  "main": "login.js",
+  "scripts": {
+    "start": "node login.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "binary-parser": "^2.2.1",
+    "crc-32": "^1.2.2",
+    "crypto": "^1.0.1",
+    "fs": "0.0.1-security",
+    "mqtt": "^5.8.0",
+    "zlib": "^1.0.5"
+  }
+}
